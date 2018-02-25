@@ -9,7 +9,7 @@ body {
 h1 {
   font-style: italic;
   font-weight: normal;
-  font-size: 40px;
+  font-size: 2.5em;
   margin: 0;
 }
 
@@ -29,7 +29,7 @@ ul#menu > li > a {
   color: #938785;
   text-decoration: none;
   margin: 0 10px;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 ul#menu > li > a:hover {
@@ -53,7 +53,7 @@ ul#menu > li > a:hover {
 .post > .details > h2 > a {
   color: #d50b18;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 1.5em;
   font-weight: normal;
 }
 
@@ -78,8 +78,17 @@ ul#menu > li > a:hover {
   flex: 7;
   margin-left: 20px;
   line-height: 28px;
-  max-height: 300px;
-  overflow-y: auto;
+}
+
+@media (max-width: 700px) {
+  .post {
+    flex-direction: column;
+  }
+  .post > .details {
+    flex:3;
+    border-right: none;
+    padding: 0 20px;
+  }
 }
 
 .cols {
@@ -104,7 +113,7 @@ ul#menu > li > a:hover {
   text-decoration: none;
   color: #000000;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 1.75em;
 }
 
 .cols > .col > h3 > a:hover {
